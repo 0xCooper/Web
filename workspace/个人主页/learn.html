@@ -1,60 +1,65 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: myc
+ * @Date: 2021-01-22 18:42:16
+-->
 <!DOCTYPE html>
 <html>
-<head> 
-<meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title> 
-	<script>
-function displayResult()
-{
-	document.getElementById("myHeader").innerHTML="Have a nice day!";
-}
-</script>
+
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+    </script>
 </head>
-	<style>
-h1.intro 
-{
-	color:red;
-}
-p.important 
-{
-	color:red;
-}
+<style>
+    h1.intro {
+        color: red;
+    }
+    
+    p.important {
+        color: red;
+    }
 </style>
+
 <body>
-	<center>这个文本居中对齐。</center>
-<p contenteditable="true">这是一个段落。是可编辑的。尝试修改文本。</p>
-<bdo dir="rtl">文本方向从右到左!</bdo>
-<h1 id="myHeader">Hello World!</h1>
-<button onclick="displayResult()">button</button>
-	
-	
-	
-	<button onclick="playVid()" type="button">播放视频</button>
-<button onclick="pauseVid()" type="button">暂停视频</button> 
-<br> 
-<video id="video1">
-  <source src="mov_bbb.mp4" type="video/mp4">
+    <center>这个文本居中对齐。</center>
+    <p contenteditable="true">这是一个段落。是可编辑的。尝试修改文本。</p>
+    <bdo dir="rtl">文本方向从右到左!</bdo>
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">button</button>
+
+
+
+    <button onclick="playVid()" type="button">播放视频</button>
+    <button onclick="pauseVid()" type="button">暂停视频</button>
+    <br>
+    <video id="video1">
+  <source src="https://api.xiaomingming.org/cloud/mp6.php?vid=http://ggkkmuup9wuugp6ep8d.exp.bcevod.com/mda-ma6teza4k65m09e2/mda-ma6teza4k65m09e2.mp4" type="video/mp4">
   <source src="mov_bbb.ogg" type="video/ogg">
   您的浏览器不支持 HTML5 video  标签。
 </video>
 
-<script> 
-var myVideo=document.getElementById("video1"); 
+    <script>
+        var myVideo = document.getElementById("video1");
 
-function playVid()
-{ 
-  myVideo.play(); 
-} 
+        function playVid() {
+            myVideo.play();
+        }
 
-function pauseVid()
-{ 
-  myVideo.pause(); 
-} 
-</script> 
-<h1 class="intro">标题 1</h1>
-<p>段落。</p>
-<p class="important">注意：这是一个很重要的段落。 :)</p>
-<p>Video courtesy of <a href="//www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+        function pauseVid() {
+            myVideo.pause();
+        }
+    </script>
+    <h1 class="intro">标题 1</h1>
+    <p>段落。</p>
+    <p class="important">注意：这是一个很重要的段落。 :)</p>
+    <p>Video courtesy of <a href="//www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
 
 </body>
+
 </html>
